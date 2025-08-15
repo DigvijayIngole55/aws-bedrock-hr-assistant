@@ -246,15 +246,6 @@ If you encounter issues:
 3. Verify your AWS permissions and configuration
 4. Open an issue in this repository with detailed error information
 
-## 🎯 Future Enhancements
-
-- [ ] Add more HR functions (employee onboarding, performance reviews)
-- [ ] Integrate with external HR systems
-- [ ] Add email notifications for vacation requests
-- [ ] Implement approval workflows
-- [ ] Add data encryption and security enhancements
-- [ ] Create web interface for easier interaction
-
 ---
 
 **Built with ❤️ using AWS Bedrock, Lambda, and Python**
