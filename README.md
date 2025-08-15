@@ -160,45 +160,6 @@ The project includes comprehensive testing through the Jupyter notebooks:
 3. **Agent Testing**: End-to-end agent functionality tests
 4. **Error Handling**: Test error scenarios and edge cases
 
-## 🚨 Troubleshooting
-
-### Common Issues
-
-1. **Lambda Function Import Error**:
-   ```
-   "Unable to import module 'lambda_function'"
-   ```
-   - Ensure `lambda_function.py` is included in the deployment package
-   - Check handler configuration: `lambda_function.lambda_handler`
-
-2. **Bedrock Agent Response Format Error**:
-   ```
-   "The server encountered an error processing the Lambda response"
-   ```
-   - Verify Lambda response format matches Bedrock Agent expectations
-   - Check response structure in `lambda_function.py`
-
-3. **Database Connection Issues**:
-   ```
-   "Database file not found"
-   ```
-   - Ensure `employee_database.db` is included in Lambda deployment
-   - Check database file path in Lambda function
-
-4. **IAM Permission Issues**:
-   ```
-   "AccessDenied" or "Forbidden"
-   ```
-   - Verify AWS credentials have required permissions
-   - Check IAM roles and policies are properly attached
-
-### Debug Mode
-
-Enable debug logging in notebooks:
-```python
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
 
 ## 🧹 Cleanup
 
@@ -224,14 +185,6 @@ This project uses several AWS services that may incur costs:
 - **IAM**: No additional costs
 
 Estimated cost for testing: < $5/month for light usage
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
